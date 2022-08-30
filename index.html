@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="logo">Jungle</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <h2 id="text"><span>It's Time For A New </span><br />Adventure</h2>
+      <img src="./images/bird1.png" id="bird1" alt="" />
+      <img src="./images/bird2.png" id="bird2" alt="" />
+      <img src="./images/forest.png" id="forest" alt="" />
+      <a href="#" id="btn">Explore</a>
+
+      <img src="./images/rocks.png" id="rocks" alt="" />
+      <img src="./images/water.png" id="water" alt="" />
+    </section>
+    <div class="sec">
+      <h2>A Story of a young Explorer</h2>
+      <p>
+        I’ve grown up with the outdoors right on my doorstep. From a young age I
+        came to love spending time outdoors and learning skills I’d need to
+        survive in the wild. The outdoors became a place where I feel
+        comfortable and an environment that I most felt confident in. For
+        example, <br /><br />
+        I’m not an academic kid and I’ve always really struggled with anything
+        that involved reading and writing. I’m a practical lad, who has always
+        been home-schooled and so this has given me the opportunity to learn
+        more about the things that I’m interested in and build my
+        self-confidence through becoming good at those things and learning new
+        practical skills. So when I sit down to do the things I find tough, one,
+        I’m much better at them but, secondly, I’ve found that I actually enjoy
+        them. So for me the outdoors is not only an interest but a massive part
+        of my education and something I’ve used to help me overcome my
+        struggles. I see how much of a difference the outdoors can have on a
+        young person’s life. <br />
+        <br />
+        I saw a post about British Exploring Society on Facebook a while back
+        when I was looking at expeditions, explorers and adventure Facebook
+        groups I could join. I clicked on it and it took me to a page titled
+        something like “LISTEN UP YOUNG PEOPLE, come take part in our virtual
+        adventures and explore the wilderness where you stand.” That sounded
+        right up my street. <br />
+        <br />
+        My dream is to become a polar explorer and expedition leader who takes
+        young people who are struggling in life – with their mental health, low
+        self-confidence and all the other struggles that they face – on
+        expeditions to help transform their lives. I have faced my own struggles
+        and found solutions to them through my love for the outdoors. I have
+        seen how much of a difference it makes to me, but at the age of 15 being
+        an expedition leader is not quite possible and so I’m in training. Then,
+        when I saw that the British Exploring Society do virtual weekly
+        expeditions that I can join from the wilderness where I stand, where I
+        could learn the skills I’m going to need to be an expedition leader from
+        experts in their field, it sounded perfect! Looking back now I’m so glad
+        I hit that sign up button. <br />
+        <br />
+        I love Wildestan Adventures and I’ve learnt so much. Each week is
+        something completely new, ranging from how nature benefits your mental
+        health to exploring quarries and cliffs or learning practical skills. I
+        just kept coming back because I love being able to learn new skills and
+        ask questions to experts who are enthusiastic and passionate about what
+        they love and happy to share their knowledge with young people who are
+        enthusiastic to learn. <br />
+        <br />
+        For me, one of my highlights was when we cooked expedition-style food,
+        Fish and Chips gone wild. I love cooking, especially over a campfire or
+        in the wilderness and so I loved cooking along and having tons of fun.
+        My other highlights are the time when we went searching for bugs and
+        other wildlife in a city centre and learning how to be more resourceful
+        and reuse stuff that we see only fit for the tip and to reduce our waste
+        – a skill that’s needed in the wild but also one that we need in our
+        everyday life, now more than ever. <br />
+        <br />
+        The Wildestan expeditions have definitely boosted my confidence – my
+        confidence in learning new skills but also my self-confidence. <br />
+        <br />
+        By unmuting myself, asking questions and chatting with the experts and
+        other young people when that Tuesday evening came around once a week, I
+        feel as if I have gained more confidence. It has definitely helped me to
+        make connections with other expedition leaders which will hopefully help
+        me towards my dream of being an explorer. Wildestan also gave me a
+        talking point which most people were interested in. <br />
+        <br />
+        British Exploring Society is so unique and epically awesome. What I love
+        about them is that they are accessible to all young people no matter
+        what your circumstances and their expeditions and workshops are not only
+        for people who have lots of money they make it accessible for every
+        young person. From what I’ve read and heard and (hopefully will soon
+        experience) is that their expeditions are no package holiday. They give
+        teens and young people a real sense of adventure. Some people may think
+        adventures are only for young kids who have a vivid imagination. Well, I
+        definitely disagree, that sense of adventure is 100% buried deep within
+        all of us and sometimes it just needs unearthing.
+      </p>
+    </div>
+
+    <script>
+      let text = document.getElementById("text");
+      let bird1 = document.getElementById("bird1");
+      let bird2 = document.getElementById("bird2");
+      let btn = document.getElementById("btn");
+      let rocks = document.getElementById("rocks");
+      let forest = document.getElementById("forest");
+      let water = document.getElementById("water");
+      let header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        text.style.top = 50 + value * -0.5 + "%";
+        bird1.style.top = value * -1.5 + "px";
+        bird1.style.left = value * 2 + "px";
+        bird2.style.top = value * -1.5 + "px";
+        bird2.style.left = value * -5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        rocks.style.top = value * -0.12 + "px";
+        forest.style.top = value * 0.25 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
+    </script>
+  </body>
+</html>
